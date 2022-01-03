@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+:root{
+    --Very-dark-blue-bg: hsl(217, 54%, 11%); /* Main BG */
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%); /* Card BG */
+    --Very-dark-blue-line: hsl(215, 32%, 27%); /* Line */
+    --White: hsl(0, 0%, 100%)
+}
+
+
+body{
+    background-color: var(--Very-dark-blue-card-bg);
+}
+
+.bd-container{
+    max-width: 1340px;
+    margin: 0 1rem;
+}
+
+.main-content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-wrapper{
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    background-color: var(--Very-dark-blue-card-bg);
+    box-shadow: 0px 0px 0 20px rgba(0, 0, 0, 0.1), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.card-wrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-wrapper .card-content strong{
+    display: block;
+    color: #fff;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.card-wrapper .card-content .card-text{
+    color: #314764;
+    margin: 25px 0;
+}
+
+.card-wrapper .card-content .card-worth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.card-worth div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card-worth .eth img{
+    width: 10px;
+    height: auto;
+}
+
+.card-worth h4{
+    color: #00FFF8
+}
+
+.card-worth .remaining-time img{
+    width: 15px;
+}
+
+.card-worth .remaining-time span{
+    color: #314764;
+    font-weight: bold;
+}
+
+.card-info .card-user-info {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-info .card-user-info .creator-name{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.card-info .card-user-info .creator-name span{
+    color: #314764;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.card-user-info img{
+    width: 30px;
+    border: 1px #ccc;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: auto;
+}
+
+hr.card-line{
+    border: 1px solid #314764; 
+}
+
+
+@media screen and (min-width: 1340px) {
+    .bd-container{
+        margin: 0 auto;
+    }
+}
